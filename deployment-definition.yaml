@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: myapp-deployment
   labels:
-    name: myapp-dep
+    name: myapp
     type: front-end
     app: nginx
     tier: front-end
@@ -16,7 +16,7 @@ spec:
       metadata:
         name: myapp-nginx
         labels:
-          app: myapp-dep
+          app: myapp
       spec:
         containers:
           - name: nginx-container
