@@ -1,7 +1,0 @@
-# This ansible script will install kubernetes on Ubuntu Server
----
-- host : kube-master
-  become: true
-  gather_facts: false
-  tasks:
-    - name:  
